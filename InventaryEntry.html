@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.int-center {
+  display:table-cell;
+  margin: auto;
+  width: 15%;
+  border: 1px solid #73AD21;
+  padding: 10px;
+}
+
+.txt-center {
+  text-align: center;
+  border: 0px solid green;
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border: 0px solid green; 
+}
+
+
+</style>
+</head>
+<body>
+<div class="center">
+	<h2 class="txt-center">Fill up your details:</h2>
+
+	<p class="txt-center">To select element use a drop-down list:</p>
+
+	<form action="/action_page.php">
+
+		<div class="int-center">
+		  <label for="cars">Choose Country:</label><br>
+		  <select id="Country" name="Country" style="font-size: 1rem;">
+		    <option value="India">India</option>
+		   </select>
+	   </div>
+
+	   <div class="int-center">
+
+		   <label for="cars">Choose State:</label><br>
+		  <select id="State" name="State" style="font-size: 1rem;">
+		    <option value="Bihar">Bihar</option>
+		  </select>
+	  </div>
+
+	   <div class="int-center">
+		   <label for="cars">Choose District:</label><br>
+		  <select id="District" name="District" style="font-size: 1rem;">
+		    <option value="Muzaffarpul">Muzaffarpul</option>
+		    <option value="Kanti">Kanti</option>
+		    <option value="Samastipur">Samastipur</option>
+		    <option value="Champaran">Champaran</option>
+		  </select>
+	   </div> 
+
+	   <div class="int-center">
+		  <label for="cars">Choose Locality:</label><br>
+		  <select id="Locality" name="Locality" style="font-size: 1rem;">
+		    <option value="Saraiya">Saraiya</option>
+		    <option value="Motipur">Motipur</option>
+		    <option value="Kanti">Kanti</option>
+		    <option value="Jaintpur">Jaintpur</option>
+		  </select>
+	  </div>
+
+	</br></br>
+	  <div class="int-center">
+	    <label for="cars">Choose Your Vehicle:</label><br>
+		  <select id="Vehicle" name="Vehicle" style="font-size: 1rem;">
+		    <option value="Inova">Inova</option>
+		    <option value="Audi">Audi</option>
+		    <option value="XUV">XUV</option>
+		    <option value="Ferari">Ferari</option>
+		    <option value="Scorpio">Scorpio</option>
+		    <option value="Bolero">Bolero</option>
+		  </select>
+	 </div>
+
+	 </br></br></br></br></br>
+	<div class="btn-center">
+		<a href="account.html" class="button">OK</a>
+	</div>
+
+	</form>
+</div>
+</body>
+</html>
