@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.center2 {
+  margin: auto;
+  width: 15%;
+  border: 0px solid #73AD21;
+  padding: 10px;
+}
+
+.txt-center {
+  text-align: center;
+  border: 0px solid green;
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border: 0px solid green; 
+}
+
+
+</style>
+</head>
+<body>
+<div class="center">
+	<h2 class="txt-center">Fill up your details:</h2>
+
+	<p class="txt-center">To select element use a drop-down list:</p>
+
+	<form action="/action_page.php">
+
+		</br></br>
+		  <div class="center2">
+		    <label for="cars">Select Vehicle:</label><br><br>
+			  <select id="Vehicle" name="Vehicle" style="font-size: 1rem;">
+			    <option value="Inova">Inova</option>
+			    <option value="Audi">Audi</option>
+			    <option value="XUV">XUV</option>
+			    <option value="Ferari">Ferari</option>
+			    <option value="Scorpio">Scorpio</option>
+			    <option value="Bolero">Bolero</option>
+			  </select>
+		 </div>
+
+		 </br></br></br>
+		<div class="btn-center">
+			<a href="login_error.html" class="button">OK</a>
+		</div>
+
+	</form>
+</div>
+</body>
+</html>
