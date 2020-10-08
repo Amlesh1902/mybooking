@@ -107,3 +107,8 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.w3-padding-64 {
+  padding-top: 15px!important;
+  padding-bottom: 15px!important;
+}
