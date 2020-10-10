@@ -38,9 +38,34 @@
         <b><p style="font-size:25px">Welcome to Book Vihar</p></b>
         <b><p style="font-size:18px">Coming soon for Cab booking....</p></b>
         <b><p style="font-size:18px">Site under developement..</p></b>
-        </br>
+<!--         </br> -->
 
-        <img src="images/eagle.jpg" style="width:80%;height:80%">
+<!--         <img src="images/eagle.jpg" style="width:80%;height:80%"> -->
+
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="images/MarutiSuzuki.jpg" style="width:60%;height:80%">
+            <!-- <div class="text">Maruti Suzuki</div> -->
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/ToyotaInnova.jpg" style="width:60%;height:80%">
+            <!-- <div class="text">Innova</div> -->
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/Scorpio.jpg" style="width:60%;height:80%">
+            <!-- <div class="text">Scorpio</div> -->
+          </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+
+
 
         <h2 id="AboutUs">AboutUs</h2>
           <p >This web site is all about your booking.<br>
@@ -72,6 +97,28 @@
       <a href="#"><i class="fa fa-linkedin"></i></a>
       </br><label style="font-size:10px">Powered by <a href="#">R-11</a></label>
     </footer>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
 
   </body>
 </html>
