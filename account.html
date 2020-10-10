@@ -105,6 +105,14 @@
     }
 */
 
+.btn-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border: 0px solid green; 
+}
+
 
     /* Change styles for cancel button and signup button on extra small screens */
     @media screen and (max-width: 300px) {
@@ -143,9 +151,14 @@
             <b><label style="font-size: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;Vendor</label></b>
             </br>
             <h2><br> Registration / Login</h2>
-            <button onclick="window.location.href='vendor_registration.html'" style="width:auto;">Register</button>
+<!--             <button onclick="window.location.href='vendor_registration.html'" style="width:auto;">Register</button>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button onclick="window.location.href='vendor_login.html'" style="width:auto;">Login</button>
+ -->
+            <a href="vendor_registration.html" class="button">Register</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="vendor_login.html" class="button">Login</a>
+
          </div>
       </div>
 
@@ -155,9 +168,16 @@
             <b><label style="font-size: 40px;">&nbsp;&nbsp;Customer</label></b>
             </br>
             <h2><br> Registration / Login</h2>
-            <button onclick="window.location.href='customer_registration.html'" style="width:auto;">Register</button>
+
+<!--             <button onclick="window.location.href='customer_registration.html'" style="width:auto;">Register</button>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button onclick="window.location.href='customer_login.html'" style="width:auto;">Login</button>
+ -->
+
+            <a href="customer_registration.html" class="button">Register</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="customer_login.html" class="button">Login</a>
+
          </div>
       </div>
       <!-- <div class = "vertical"></div>  -->
