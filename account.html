@@ -15,6 +15,27 @@
 
     button:hover { opacity:1; }
 
+.btn-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border: 0px solid green; 
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
     /* Extra styles for the cancel button */
     .cancelbtn { padding: 14px 20px; background-color: #f44336;}
 
@@ -84,6 +105,7 @@
     }
 */
 
+
     /* Change styles for cancel button and signup button on extra small screens */
     @media screen and (max-width: 300px) {
       .cancelbtn, .signupbtn {
@@ -118,80 +140,24 @@
       <div style="border: 0px solid #888; width:50%; float:left">
          <!-- <div class="modal-content"> -->
          <div class="modal-content-registration">
-            <b><label style="font-size: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor_C</label></b>
+            <b><label style="font-size: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor</label></b>
             </br>
             <h2><br> Registration / Login</h2>
-            <button onclick="document.getElementById('vendor_c_id_register').style.display='block'" style="width:auto;">Register</button>
+            <button onclick="window.location.href='vendor_registration_page.html'" style="width:auto;">Register</button>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button onclick="document.getElementById('vendor_c_id_login').style.display='block'" style="width:auto;">Login</button>
-         </div>
-         <div id="vendor_c_id_register" class="modal">
-            <span onclick="document.getElementById('vendor_c_id_register').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <form class="modal-content" action="VendorLocality.html">
-               <div class="container">
-                  <h1>Sign Up</h1>
-                  <p>Please fill in this form to create an account.</p>
-                  <hr>
-                  <label for="name"><b>Name</b></label>
-                  <input type="text" placeholder="Enter Name" name="name" required>
-                  <label for="mobile"><b>Mobile</b></label>
-                  <input type="text" placeholder="Enter Mobile" name="mobile" required>
-                  <label for="email"><b>Email</b></label>
-                  <input type="text" placeholder="Enter Email" name="email" required>
-                  <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
-                  <label for="psw-repeat"><b>Repeat Password</b></label>
-                  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-                  <label>
-                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                  </label>
-                  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-                  <div class="clearfix">
-                     <button type="button" onclick="document.getElementById('vendor_c_id_register').style.display='none'" class="cancelbtn">Cancel</button>
-                     <button type="submit" class="signupbtn">Next</button>
-                  </div>
-               </div>
-            </form>
+            <button onclick="window.location.href='vendor_login_page.html'" style="width:auto;">Login</button>
          </div>
       </div>
 
       <div style="border: 0px solid #888; width:50%; float:right">
          <!-- <div class="modal-content"> -->
          <div class="modal-content-registration">
-            <b><label style="font-size: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor</label></b>
+            <b><label style="font-size: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer</label></b>
             </br>
             <h2><br> Registration / Login</h2>
-            <button onclick="document.getElementById('vendor_id_register').style.display='block'" style="width:auto;">Register</button>
+            <button onclick="window.location.href='customer_registration_page.html'" style="width:auto;">Register</button>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button onclick="document.getElementById('vendor_id_login').style.display='block'" style="width:auto;">Login</button>
-         </div>
-         <div id="vendor_id_register" class="modal">
-            <span onclick="document.getElementById('vendor_id_register').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <form class="modal-content" action="VendorLocality.html">
-               <div class="container">
-                  <h1>Sign Up</h1>
-                  <p>Please fill in this form to create an account.</p>
-                  <hr>
-                  <label for="name"><b>Name</b></label>
-                  <input type="text" placeholder="Enter Name" name="name" required>
-                  <label for="mobile"><b>Mobile</b></label>
-                  <input type="text" placeholder="Enter Mobile" name="mobile" required>
-                  <label for="email"><b>Email</b></label>
-                  <input type="text" placeholder="Enter Email" name="email" required>
-                  <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
-                  <label for="psw-repeat"><b>Repeat Password</b></label>
-                  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-                  <label>
-                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                  </label>
-                  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-                  <div class="clearfix">
-                     <button type="button" onclick="document.getElementById('vendor_id_register').style.display='none'" class="cancelbtn">Cancel</button>
-                     <button type="submit" class="signupbtn">Next</button>
-                  </div>
-               </div>
-            </form>
+            <button onclick="window.location.href='customer_login_page.html'" style="width:auto;">Login</button>
          </div>
       </div>
       <!-- <div class = "vertical"></div>  -->
@@ -208,95 +174,6 @@
          </div>
          -->
 
-      <div id="vendor_c_id_login" class="modal">
-         <form class="modal-content animate" action="VendorInventory.html">
-            <div class="imgcontainer">
-               <span onclick="document.getElementById('vendor_c_id_login').style.display='none'" class="close" title="Close Modal">&times;</span>
-            </div>
-            <div class="container">
-               <label for="uname"><b>Email</b></label>
-               <input type="text" placeholder="Enter Email" name="uname" required>
-               <label for="psw"><b>Password</b></label>
-               <input type="password" placeholder="Enter Password" name="psw" required>
-               <label>
-               <input type="checkbox" checked="checked" name="remember"> Remember me
-               </label>
-               <div class="clearfix">
-                  <button type="button" onclick="document.getElementById('vendor_c_id_login').style.display='none'" class="cancelbtn">Cancel</button>            
-                  <button type="submit" class="signupbtn">Login</button>
-               </div>
-            </div>
-            <div class="container" style="background-color:#f1f1f1">
-               <span class="psw">Forgot <a href="#">password?</a></span>
-            </div>
-         </form>
-      </div>
-
-      <div id="vendor_id_login" class="modal">
-         <form class="modal-content animate" action="VendorInventory.html">
-            <div class="imgcontainer">
-               <span onclick="document.getElementById('vendor_id_login').style.display='none'" class="close" title="Close Modal">&times;</span>
-            </div>
-            <div class="container">
-               <label for="uname"><b>Email</b></label>
-               <input type="text" placeholder="Enter Email" name="uname" required>
-               <label for="psw"><b>Password</b></label>
-               <input type="password" placeholder="Enter Password" name="psw" required>
-               <label>
-               <input type="checkbox" checked="checked" name="remember"> Remember me
-               </label>
-               <div class="clearfix">
-                  <button type="button" onclick="document.getElementById('vendor_id_login').style.display='none'" class="cancelbtn">Cancel</button>            
-                  <button type="submit" class="signupbtn">Login</button>
-               </div>
-            </div>
-            <div class="container" style="background-color:#f1f1f1">
-               <span class="psw">Forgot <a href="#">password?</a></span>
-            </div>
-         </form>
-      </div>
-
-
    </div>
-   <script>
-
-      // Get the modal
-      var vendor_c_modal_register = document.getElementById('vendor_c_id_register');
-      var vendor_c_modal_login = document.getElementById('vendor_c_id_login');
-      
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == vendor_c_modal_register) {
-          vendor_c_modal_register.style.display = "none";
-        }
-      }
-      
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-          if (event.target == vendor_c_modal_login) {
-              vendor_c_modal_login.style.display = "none";
-          }
-      }
-
-      // Get the modal
-      var vendor_modal_register = document.getElementById('vendor_id_register');
-      var vendor_modal_login = document.getElementById('vendor_id_login');
-      
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == vendor_modal_register) {
-          vendor_modal_register.style.display = "none";
-        }
-      }
-      
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-          if (event.target == vendor_modal_login) {
-              vendor_modal_login.style.display = "none";
-          }
-      }
-      
-      
-   </script>
 </body>
 </html>
